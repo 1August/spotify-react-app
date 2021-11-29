@@ -41,25 +41,31 @@ const SidebarMenu = () => {
         }
     ]
 
+    let myWindow = document.querySelectorAll(s.sidebar_navigation);
+    console.log(myWindow)
+    myWindow.forEach(el => el.addEventListener("click", () => {
+
+    }))
+
     return (
         <aside className={"sidebarMenu"}>
             <div className={s.threeDots}>
-                <a href="#">
+                <a href="">
                     <i className={"fas fa-ellipsis-h"}/>
                 </a>
             </div>
             <div className={s.navigationGroup}>
                 <nav>
                     <ul className={s.sidebar_navigation + " navList"}>
-                        <li><a href="#" className={s.active}><i className={"fas fa-home"}/> Home</a></li>
-                        <li><a href="#"><i className={"fas fa-search"}/> Search</a></li>
-                        <li><a href="#"><i className={"fas fa-book"}/> My Library</a></li>
+                        <li><a href="" className={s.active}><i className={"fas fa-home"}/> Home</a></li>
+                        <li><a href=""><i className={"fas fa-search"}/> Search</a></li>
+                        <li><a href=""><i className={"fas fa-book"}/> My Library</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul className={s.sidebar_navigation + " navList"}>
-                        <li><a href="#"><i className={"fas fa-plus-square"}/> Create Playlist</a></li>
-                        <li><a href="#"><i className={"fas fa-heart"}/> Liked Songs</a></li>
+                        <li><a href=""><i className={"fas fa-plus-square"}/> Create Playlist</a></li>
+                        <li><a href=""><i className={"fas fa-heart"}/> Liked Songs</a></li>
                     </ul>
                 </nav>
             </div>
@@ -68,7 +74,7 @@ const SidebarMenu = () => {
                 <ul className={s.likedSongsList + " navList"}>
                     {listOfLikedSongs.map(el => {
                         return(
-                            <li><a href={el.link}>{`${el.name} - ${el.artist} : ${el.publishedYear}`}</a></li>
+                            <li key={el.name + el.link}><a href={el.link}>{`${el.name} - ${el.artist} : ${el.publishedYear}`}</a></li>
                         )
                     })}
                 </ul>
