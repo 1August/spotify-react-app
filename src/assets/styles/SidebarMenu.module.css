@@ -1,6 +1,66 @@
-.sidebarmenu-wrapper{
-
+:root{
+    --sidebar_bgc: #000;
+    --sidebar_nav_a: 0.3em;
+    --allAPaddingsLeft: .5em;
+}
+*{
+    color: teal;
+}
+aside{
+    /*position: fixed;*/
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: var(--sidebar_bgc);
+    padding: .5em;
+}
+aside a{
+    padding-left: var(--allAPaddingsLeft) !important;
 }
 .threeDots{
+    margin: 1em 0;
+    padding-left: var(--sidebar_nav_a);
+}
+ul > *:hover *, .threeDots a:hover i{
+    color: #f2f2f2;
+}
+.navigationGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+}
+.sidebar_navigation{
+    flex-direction: column;
+    gap: .5em;
+}
+.sidebar_navigation li{
+    /*padding-left: ;*/
+}
+.sidebar_navigation a{
+    padding: var(--sidebar_nav_a) 0;
+    border-radius: 5px;
+    display: block;
+}
+a.active{
+    font-weight: 400;
+    color: #f2f2f2;
+    background-color: rgba(255, 255, 255, .2);
+}
 
+hr{
+    width: 90%;
+    margin: .75em auto;
+    height: 1px;
+    border: none;
+    background-color: #fff;
+    opacity: .5;
+}
+
+.likedSongsList{
+    font-size: .9em;
+    flex-direction: column;
+    gap: .35em;
+}
+.likedSongsList a{
+    display: block;
 }

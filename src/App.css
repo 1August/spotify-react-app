@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600:800&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 0;
+}
+.App{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebarMenu{
+    position: absolute;
+}
+.mainContent{
+    position: absolute;
+    left: calc(100% / 6);
+    overflow: auto;
+    width: calc(500% / 6);
+    height: 90vh;
+}
+.player{
+    position: absolute;
+    background-color: #4c4c4c;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
