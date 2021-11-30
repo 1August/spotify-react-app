@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&display=swap');
+@import "./assets/styles/variables.css";
 
 *{
     box-sizing: border-box;
+    color: #acacac;
 }
 body{
     margin: 0;
@@ -14,26 +16,28 @@ a{
 h1{
     margin: 0;
 }
+.w-80{
+    width: 80%;
+}
 .App{
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
-.sidebarMenu{
-    position: absolute;
-}
+/*.sidebarMenu{*/
+/*    position: absolute;*/
+/*}*/
 .mainContent{
-    position: absolute;
-    left: calc(100% / 6);
-    top: 7vh;
+    /*position: absolute;*/
+    top: calc(100% / 15);
+    left: calc(100% / 7);
+    right: 0;
+    bottom: calc(100% / 9);
     overflow: auto;
-    width: calc(500% / 6);
-    height: 90vh;
 }
 .player{
-    position: absolute;
-    background-color: #4c4c4c;
-    height: 10vh;
+    /*position: absolute;*/
+    height: calc(100% / 9);
     bottom: 0;
     left: 0;
     right: 0;

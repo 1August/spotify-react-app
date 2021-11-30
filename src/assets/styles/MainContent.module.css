@@ -1,4 +1,7 @@
-
+.mainContent{
+    position: absolute;
+}
 .content{
+    padding: 1.5em 3em;
     /*overflow: paged-y-controls;*/
 }

@@ -1,16 +1,14 @@
+@import "./variables.css";
+
 :root{
-    --sidebar_bgc: #000;
     --sidebar_nav_a: 0.3em;
     --allAPaddingsLeft: .5em;
 }
-*{
-    color: teal;
-}
 aside{
-    /*position: fixed;*/
+    position: absolute;
     height: 100%;
-    width: calc(100% / 6);
-    background-color: var(--sidebar_bgc);
+    width: calc(100% / 7);
+    background-color: var(--bgcMain);
     padding: .5em;
 }
 aside a{
@@ -31,7 +29,7 @@ ul > *:hover *, .threeDots a:hover i{
 }
 .sidebar_navigation{
     flex-direction: column;
-    gap: .5em;
+    gap: .4em;
 }
 .sidebar_navigation li{
     /*padding-left: ;*/
@@ -41,19 +39,10 @@ ul > *:hover *, .threeDots a:hover i{
     border-radius: 5px;
     display: block;
 }
-a.active{
+a.active {
     font-weight: 400;
     color: #f2f2f2;
     background-color: rgba(255, 255, 255, .2);
-}
-
-hr{
-    width: 90%;
-    margin: .75em auto;
-    height: 1px;
-    border: none;
-    background-color: #fff;
-    opacity: .5;
 }
 
 .likedSongsList{

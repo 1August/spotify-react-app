@@ -3,7 +3,7 @@ import "../assets/styles/styles.css"
 
 const MainContent = () => {
     return (
-        <div className={"mainContent"}>
+        <div className={s.mainContent + " mainContent"}>
             <div className={s.content}>
                 <h1>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consequatur culpa
