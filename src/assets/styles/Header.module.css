@@ -1,0 +1,134 @@
+:root{
+    --header-bg: #491a41;
+    --arrow-color: #15061d;
+    --buttonUpgradeBg: #15061d;
+}
+
+.header{
+    position: absolute;
+    background-color: #4c4c4c;
+    width: auto;
+    height: 7vh;
+    top: 0;
+    left: calc(100%/6);
+    right: 0;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-around;
+    gap: 45%;
+    align-items: center;
+
+}
+.arrowIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 6%;
+    height: 7vh;
+    align-items: center;
+}
+
+#arrowLeft {
+    color: var(--arrow-color);
+
+    font-size: 2.2rem;
+}
+#arrowRight {
+    color: var(--arrow-color);
+
+    font-size: 2.2rem;
+}
+.accountIcons{
+    width: 30%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.accountIcons button{
+    width: 30%;
+    height: 55%;
+    background-color: var(--buttonUpgradeBg);
+    color: white;
+    border-radius: 15px;
+    border: solid white 1px;
+    text-transform:uppercase;
+    font-weight: 800;
+    font-size: 0.7rem;
+}
+.profileWrapper{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    width: 30%;
+    height: 50%;
+    background-color: var(--buttonUpgradeBg);
+    justify-content: space-between;
+    border-radius: 45px;
+
+}
+.profileImg{
+    width: 24px;
+    height: 24px;
+    background: url("https://i.ytimg.com/vi/WAnEM_HTKgA/maxresdefault.jpg") no-repeat center / cover;
+    border-radius: 40px;
+    margin-left: 3px;
+}
+.profile p{
+   margin: 0;
+    color: white;
+}
+.profile i{
+   text-align: center;
+    color: white;
+}
+
+.dropdownProfileMenu{
+    position: absolute;
+    top: 38px;
+    opacity: 0;
+    /*pointer-events: none;*/
+    transition: all 0.4s ease;
+}
+
+.dropdownProfileMenu ul{
+    height: 28vh;
+    width: 200px;
+    position: absolute;
+    list-style: none;
+    background-color: var(--buttonUpgradeBg);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 15px;
+
+}
+.dropdownProfileMenu a{
+    color: white;
+}
+.dropdownProfileMenu li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.dropdownProfileMenu li:hover{
+    background-color: var(--header-bg);
+}
+
+/*change a when hover list*/
+/*.dropdownProfileMenu li:hover + .dropdownProfileMenu a{*/
+/*    color: black;*/
+/*}*/
+
+
+
+
+
